@@ -6,7 +6,7 @@ block content
   div(class="container-fluid")
         div(class="row")
             -
-                let coat = [
+                let jacket = [
                     {
                         "name": "Puffed jacket",
                         "brand": "Chapter Club",
@@ -27,7 +27,7 @@ block content
 
                    
                 ]
-            each v,index in coat
+            each v,index in jacket
                 div(class="col-sm-2" onclick=`buy(${index})`) #{v.name}
                 div(class="col-sm-2" onclick=`buy(${index})`) #{v.brand}
                 div(class="col-sm-2" onclick=`buy(${index})`) #{v.price}
